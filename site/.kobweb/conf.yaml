@@ -1,0 +1,14 @@
+site:
+  title: "KotlinWebExample"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/developmentExecutable/youtubeexample.js"
+      api: "build/libs/youtubeexample.jar"
+    prod:
+      script: "build/distributions/youtubeexample.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
